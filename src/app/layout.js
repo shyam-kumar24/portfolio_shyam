@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import CommonLayout from "@/components/client-view/common-layout";
 
-const inter = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const inter = Inter({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${inter.variable} antialiased`}
+        // className={`${inter.variable} ${inter.variable} antialiased`}
       >
         <CommonLayout>
           {children}
