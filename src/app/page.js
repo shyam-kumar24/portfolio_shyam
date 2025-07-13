@@ -6,7 +6,7 @@ import ClientProjectView from "@/components/client-view/project";
 
 
 async function extractAllDatas(currentSection){
-  const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
+  const res = await fetch(`/api/${currentSection}/get`, {
     method: 'GET',
     cache: 'no-store'
   })
