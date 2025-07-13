@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-md bg-white">
-        <ul className="flex justify-between items-center text-black py-2">
+        <ul className="flex justify-between items-center overflow-x-auto whitespace-nowrap text-black py-2">
           <CreateMenus
             setActiveLink={setActiveLink}
             activeLink={activeLink}

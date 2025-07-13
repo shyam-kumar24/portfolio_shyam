@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useRef } from "react";
 import AnimationWrapper from "../animation-wrapper";
 import { motion } from "framer-motion";
@@ -8,6 +9,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaTwitter,
+  FaGithub,
 } from "react-icons/fa";
 import Image from "next/image";
 import aiImage from "../../../assets/shyam_image.jpg";
@@ -33,18 +35,27 @@ const socialIcons = [
   {
     id: "facebook",
     icon: <FaFacebookF className="w-10 h-10 text-green-600 cursor-pointer" />,
+    link: "",
   },
   {
     id: "twitter",
     icon: <FaTwitter className="w-10 h-10 text-green-600 cursor-pointer" />,
+    link: "",
   },
   {
     id: "linkedin",
     icon: <FaLinkedinIn className="w-10 h-10 text-green-600 cursor-pointer" />,
+    link: "https://www.linkedin.com/in/shyamkumar-frontend/",
   },
   {
     id: "instagram",
     icon: <FaInstagram className="w-10 h-10 text-green-600 cursor-pointer" />,
+    link: "",
+  },
+  {
+    id: "github",
+    icon: <FaGithub className="w-10 h-10 text-green-600 cursor-pointer" />,
+    link: "https://github.com/shyam-kumar24",
   },
 ];
 
@@ -67,7 +78,7 @@ export default function ClientHomeView({ data }) {
                     <span
                       key={index}
                       className={`${
-                        index === 2 || index === 3
+                        index === 4 || index === 4
                           ? "text-green-600"
                           : "text-black"
                       }`}
@@ -97,7 +108,14 @@ export default function ClientHomeView({ data }) {
                   whileHover={{ scale: 1.2, rotate: 360 }}
                   whileTap={{ scale: 0.8, rotate: -360, borderRadius: "100%" }}
                 >
-                  {item.icon}
+                  <a
+                    href={item?.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black"
+                  >
+                    {item.icon}
+                  </a>
                 </motion.div>
               ))}
             </motion.div>
