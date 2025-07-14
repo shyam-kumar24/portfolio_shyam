@@ -42,8 +42,7 @@ lib/
 
 ## 🚀 Getting Started Locally
 
-1. **Clone the repo**
-```bash
+1. Clone the repo
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 
