@@ -42,22 +42,24 @@ lib/
 
 ## 🚀 Getting Started Locally
 
-1. Clone the repo
+1. **Clone the repo**
+```bash
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 
-2. Install dependencies
+3. Install dependencies
 npm install
 
-3. Create .env file
+4. Create .env file
 MONGODB_URI = your_mongodb_connection_string
 NEXT_PUBLIC_SITE_URL = http://localhost:3000
 
-4. Run the app
+5. Run the app
 npx next dev
 
 Visit: http://localhost:3000
 
+``` 
 ## Admin Panel
 
 Visit /admin
