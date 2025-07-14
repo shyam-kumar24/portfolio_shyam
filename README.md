@@ -24,6 +24,7 @@ This is my fully functional personal portfolio website built using **Next.js 15 
 
 ## 📁 Project Structure
 
+```txt
 app/
 └── page.js # Main Portfolio Page
 └── api/ # API Routes
@@ -38,7 +39,7 @@ lib/
 
 .env # Environment variables
 
----
+```
 
 ## 🚀 Getting Started Locally
 
