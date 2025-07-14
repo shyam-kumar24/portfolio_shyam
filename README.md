@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧑‍💻 Full-Stack Developer Portfolio
 
-## Getting Started
+This is my fully functional personal portfolio website built using **Next.js 15 (App Router)**, **MongoDB Atlas**, **Tailwind CSS**, and deployed on **Vercel**. It includes both the public-facing portfolio and a protected admin dashboard to manage content dynamically.
 
-First, run the development server:
+🌐 **Live site** [portfolio-shyam-nu.vercel.app](https://portfolio-shyam-nu.vercel.app)
 
+## 🔥 Features
+
+- ✅ Responsive modern UI (Tailwind CSS)
+- ✅ Full-stack architecture (Next.js + MongoDB)
+- ✅ Admin dashboard to manage portfolio content
+- ✅ API routes to interact with MongoDB
+- ✅ SSR for improved performance and SEO
+- ✅ Image optimization
+- ✅ Deployed on Vercel
+
+## 🧠 Tech Stack
+
+| Frontend      | Backend/API       | Database  | Styling       | Deployment |
+|---------------|-------------------|-----------|----------------|------------|
+| Next.js 15 (App Router) | Next.js Route Handlers | MongoDB Atlas | Tailwind CSS | Vercel     |
+
+---
+
+## 📁 Project Structure
+
+app/
+└── page.js # Main Portfolio Page
+└── api/ # API Routes
+└── admin/ # Admin Dashboard (secured)
+
+components/
+└── client-view/ # Public sections
+└── admin-view/ # Admin components
+
+lib/
+└── mongodb.js # MongoDB connection
+
+.env # Environment variables
+
+---
+
+## 🚀 Getting Started Locally
+
+1. **Clone the repo**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Create .env file
+MONGODB_URI = your_mongodb_connection_string
+NEXT_PUBLIC_SITE_URL = http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the app
+npx next dev
 
-## Learn More
+Visit: http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## Admin Panel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit /admin
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can securely edit and update sections like Home, About, Experience, Education, and Projects
 
-## Deploy on Vercel
+All changes are saved to MongoDB in real-time
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
