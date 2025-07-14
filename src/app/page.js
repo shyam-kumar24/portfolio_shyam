@@ -4,9 +4,10 @@ import ClientExperienceAndEducataionView from "@/components/client-view/experien
 import ClientContactView from "@/components/client-view/contact";
 import ClientProjectView from "@/components/client-view/project";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_Url || 'http://localhost:3000'
 
 async function extractAllDatas(currentSection){
-  const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
+  const res = await fetch(`${baseUrl}/api/${currentSection}/get`, {
     method: 'GET',
     cache: 'no-store'
   })
